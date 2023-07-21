@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murali Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+<style>
+body{
+    color: white;
+    margin: 0px;
+    padding: 2px;
+    background: url('img/bg.jpg');
+    font-family: cursive;
+    }
+    .left{
+        display: inline-block;
+        
+        text-align: center;
+        left: 600px;
+        top: 20px;
+
+    }
+    .mid{
+        display: block;
+        width: 60%;
+        margin:-165px auto;
+        top: 40px ;
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 0px;
+        display: inline-block;
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+        
+    }
+    .navbar li a{
+        color: white;
+        text-decoration:none ;
+        padding: 34px 23px;
+        
+        
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color:blue;
+        text-decoration: underline;
+        
+    }
+    .left img{
+        width: 130px;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 12px;
+        border: 2PX solid grey;
+        border-radius:  20px; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+    }
+    .btn:hover{
+        background-color:rgb(156, 20, 20);
+        text-decoration:underline;
+        color: blue;
+        
+    }
+    .container{
+        margin: 150px 650px;
+        padding: 45px 60px;
+        width: 35%;
+        border-radius: 20px;
+    }
+    
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+
+    }
+    .formgroup input{
+text-align: center;
+display: block;
+width: 140px;
+padding: 16px;
+border: 2px solid blue;
+border-radius: 20px;
+margin: 4px auto;
+font-size: 14px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+<img src="img/gym.jpg" alt="">
+<div>Murali Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a</li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+<button class="btn">Call us Now</button>
+<button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in vizag now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="phone number">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+
+    </div>
+</body>
+</html>

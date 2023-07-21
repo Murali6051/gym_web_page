@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murali Fitness</title>
+<link rel="stylesheet" href="./Murali Fitness_files/style.css"><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&amp;display=swap" rel="stylesheet"><style>
+body{
+    color: white;
+    margin: 0px;
+    padding: 2px;
+    background: url('img/bg.jpg');
+    font-family: cursive;
+    }
+    .left{
+        display: inline-block;
+        
+        text-align: center;
+        left: 600px;
+        top: 20px;
+
+    }
+    .mid{
+        display: block;
+        width: 60%;
+        margin: -100px auto;
+        top: 40px ;
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 0px;
+        display: inline-block;
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+        
+    }
+    .navbar li a{
+        color: white;
+        text-decoration:none ;
+        padding: 34px 23px;
+        
+        
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color:blue;
+        text-decoration: underline;
+        
+    }
+    .left img{
+        width: 130px;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 12px;
+        border: 2PX solid grey;
+        border-radius:  20px; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+    }
+    .btn:hover{
+        background-color:rgb(156, 20, 20);
+        text-decoration:underline;
+        color: blue;
+        
+    }
+    .container{
+        border: 2px solid red;
+        margin: 180px 600px;
+        padding: 450px 60px;
+        width: 40%;
+        border-radius: 20px;
+    }
+</style></head>
+
+
+
+
+<body>
+    <header class="header">
+        <div class="left">
+<img src="./Murali Fitness_files/gym.jpg" alt="">
+<div>Murali Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/index.html#" class="active">Home
+                </a></li><li><a href="http://127.0.0.1:5500/index.html#">About us</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Fitness Calculator</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+<button class="btn">Call us Now</button>
+<button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        i am a containerS
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
